@@ -1,0 +1,19 @@
+.slider-container {
+  border-radius: 10px;
+  position: relative;
+  background-color: green;
+}
+.slick-slider .slick-list .slick-track .slick-slide > div {
+  margin: 0 10px;
+  border-radius: 10px;
+  box-shadow: 0 3px 5px rgba(0, 0, 0, 0.5);
+}
+.SliderPublicNote {
+  position: relative;
+  border-radius: 10px;
+  width: 100%;
+  margin: 0 10px 0 0;
+  border: 2px solid #888;
+}
+.Sliderprivate {
+}
