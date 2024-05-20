@@ -7,16 +7,14 @@ export default function WriteNote() {
   const [value, setValue] = useState("");
 
   return (
-    <Box sx={{ backgroundColor: "bgitem.main", stroke: "text.main" }}>
-      <ReactQuill
-        sx={{ backgroundColor: "bgitem.main", stroke: "text.main" }}
-        // theme="snow"
-        value={value}
-        onChange={setValue}
-        toolbarOptions
-        placeholder="write note here"
-        id="coment"
-      />
-    </Box>
+    <ReactQuill
+      sx={{}}
+      // theme="snow"
+      value={value}
+      onChange={setValue}
+      toolbarOptions
+      placeholder="write note here"
+      id="coment"
+    />
   );
 }
