@@ -1,12 +1,14 @@
 import InputBase from "@mui/material/InputBase";
 import SearchIcon from "@mui/icons-material/Search";
 import Box from "@mui/material/Box";
+import Link from "@mui/material/Link";
 import SettingsIcon from "@mui/icons-material/Settings";
 import Avatar from "@mui/material/Avatar";
-import Link from "@mui/material/Link";
+import Switch from "@mui/material/Switch";
+
 import { styled } from "@mui/material/styles";
 import FormControlLabel from "@mui/material/FormControlLabel";
-import Switch from "@mui/material/Switch";
+
 import { useColorScheme } from "@mui/material/styles";
 
 const MaterialUISwitch = styled(Switch)(({ theme }) => ({
@@ -115,13 +117,13 @@ function Navbar() {
             </Box>
           </div>
           <div className="col-12">
-            <Box
-              component="div"
+            <Link
+              href="/take-note"
               sx={{
-                backgroundColor: "mycolor.dark",
                 display: "flex",
                 marginTop: "10px",
                 background: "#5BE260",
+                textDecoration: "none",
                 alignItems: "center",
                 height: "40px",
                 color: "#fff",
@@ -149,7 +151,7 @@ function Navbar() {
               </svg>
 
               <strong>New</strong>
-            </Box>
+            </Link>
           </div>
         </div>
         <div className="row">
@@ -163,7 +165,7 @@ function Navbar() {
                 }}
               >
                 <Link
-                  href="Homepage"
+                  href="/"
                   sx={{
                     display: "flex",
                     alignItems: "center",
