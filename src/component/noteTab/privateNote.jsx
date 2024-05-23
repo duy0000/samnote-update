@@ -7,7 +7,7 @@ import TabContext from "@mui/lab/TabContext";
 import TabList from "@mui/lab/TabList";
 import TabPanel from "@mui/lab/TabPanel";
 
-export default function PrivateTab() {
+export default function PrivateNoteTab() {
   const [value, setValue] = React.useState("1");
 
   const handleChange = (event, newValue) => {
@@ -17,11 +17,11 @@ export default function PrivateTab() {
   return (
     <Box
       sx={{
-        backgroundColor: "#fff",
-        width: "100%",
-        padding: "20px 30px",
-
+        backgroundColor: "bgitem.main",
         borderRadius: "10px",
+
+        padding: "0 10px 30px 10px",
+        marginTop: "10px",
       }}
     >
       <div
@@ -29,10 +29,14 @@ export default function PrivateTab() {
           display: "flex",
           alignItems: "center",
           justifyContent: "space-between",
+          margin: "10px 10px 0px 20px",
+          padding: "10px 0px 0 10px",
         }}
       >
-        <h5 style={{ color: "#888888" }}>PRIVATE NOTE</h5>
-        <MoreHorizIcon sx={{ cursor: "pointer" }} />
+        <Box component="h3" sx={{ color: "text.main" }}>
+          PRIVATE NOTE
+        </Box>
+        <MoreHorizIcon sx={{ cursor: "pointer", color: "text.main" }} />
       </div>
       <TabContext value={value}>
         <Box
@@ -43,12 +47,10 @@ export default function PrivateTab() {
             <Tab label="Recommended" value="2" />
           </TabList>
         </Box>
-        <TabPanel value="1" sx={{ width: "100%", padding: 0 }}>
+        <TabPanel value="1" sx={{ padding: 0 }}>
           <SliderPrivateNote />
         </TabPanel>
-        <TabPanel value="2" sx={{ width: "100%", padding: 0 }}>
-          {/* <SliderPrivateNote /> */}
-        </TabPanel>
+        <TabPanel value="2" sx={{ padding: 0 }}></TabPanel>
       </TabContext>
     </Box>
   );

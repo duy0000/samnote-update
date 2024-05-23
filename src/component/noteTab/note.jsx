@@ -17,7 +17,6 @@ export default function Note() {
   return (
     <Box
       sx={{
-        width: "100%",
         backgroundColor: "bgitem.main",
         borderRadius: "10px",
         padding: "0 0px 30px 10px",

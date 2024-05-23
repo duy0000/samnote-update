@@ -1,6 +1,9 @@
 import { experimental_extendTheme as extendTheme } from "@mui/material/styles";
 
 const theme = extendTheme({
+  typography: {
+    fontFamily: "Roboto, Arial, sans-serif",
+  },
   colorSchemes: {
     light: {
       palette: {
@@ -13,11 +16,18 @@ const theme = extendTheme({
         text: {
           main: "#000",
         },
+
         bgquicknote: {
           main: "#FFF4BA",
         },
         bgwhite: {
           main: "#fff",
+        },
+        bgmessenger: {
+          main: "#F2F2F7",
+        },
+        mymes: {
+          main: "#007AFF",
         },
       },
     },
@@ -25,6 +35,12 @@ const theme = extendTheme({
       palette: {
         bg: {
           main: "#000",
+        },
+        mymes: {
+          main: "#007AFF",
+        },
+        bgmessenger: {
+          main: "#F2F2F7",
         },
         bgitem: {
           main: "#222",

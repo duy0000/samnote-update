@@ -75,20 +75,23 @@ function Navbar() {
               display: "flex",
               alignItems: "center",
               justifyContent: "space-around",
-              margin: "20px 0",
+              padding: "20px 0",
             }}
           >
-            <div>
+            <Link href="/user-profile">
               <Avatar
                 sx={{ width: "50px", height: "50px" }}
                 src="../public/img/avata.jpg"
                 alt="anh dai dien"
               />
-            </div>
+            </Link>
             <div style={{ width: "fit-content" }}>
-              <p style={{ margin: 0, color: "#fff" }}>
+              <Link
+                href="/user-profile"
+                sx={{ margin: 0, color: "#fff", textDecoration: "none" }}
+              >
                 <strong>Minh Vu</strong>
-              </p>
+              </Link>
               <p style={{ margin: 0, color: "#fff", whiteSpace: "nowrap" }}>
                 Join at <span>26st, jul 2023</span>
               </p>
@@ -338,7 +341,7 @@ function Navbar() {
                 }}
               >
                 <Link
-                  href="sketch-tool"
+                  href="/art-note"
                   sx={{
                     display: "flex",
                     alignItems: "center",
@@ -366,16 +369,16 @@ function Navbar() {
             </ul>
           </div>
         </div>
-        <div
-          className=""
-          style={{
+        <Link
+          href="/incognito"
+          sx={{
+            textDecoration: "none",
             display: "flex",
             justifyContent: "center",
             alignItems: "center",
           }}
         >
           <div
-            className=""
             style={{
               background: "#3644C7",
               borderRadius: "30px",
@@ -397,7 +400,7 @@ function Navbar() {
             />
             Incognito
           </div>
-        </div>
+        </Link>
         <ModeToggle />
       </div>
     </>
